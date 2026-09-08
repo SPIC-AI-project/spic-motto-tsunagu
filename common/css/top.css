@@ -105,7 +105,7 @@
   100% { transform: scaleY(0); transform-origin: bottom; }
 }
 
-/* ---------- why (企画趣旨・目的) ---------- */
+/* ---------- why (この懇親会について) ---------- */
 .section-why {
   background: var(--color-white);
 }
