@@ -444,7 +444,7 @@
 .venue-carousel__dots {
   display: flex;
   justify-content: center;
-  gap: 6px;
+  gap: 10px;
 }
 
 .venue-carousel__dot {
