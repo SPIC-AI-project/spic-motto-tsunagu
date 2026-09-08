@@ -141,6 +141,10 @@
   margin-top: 32px;
 }
 
+.sticker-grid > * {
+  min-width: 0;
+}
+
 .sticker-marquee {
   position: relative;
   display: flex;
@@ -357,6 +361,10 @@
   gap: 56px;
   align-items: center;
   margin-top: 32px;
+}
+
+.venue-grid > * {
+  min-width: 0;
 }
 
 .venue-carousel__viewport {
@@ -671,9 +679,14 @@
     height: 22px;
   }
 
+  .overview-table,
+  .schedule-table {
+    table-layout: fixed;
+  }
+
   .overview-table th,
   .schedule-table th {
-    width: 96px;
+    width: 30%;
     padding: 16px 8px;
     font-size: 0.85rem;
   }
@@ -691,8 +704,7 @@
   .overview-table__row--stack th,
   .overview-table__row--stack td {
     display: block;
-    width: calc(100vw - 40px);
-    max-width: 100%;
+    width: 100%;
     padding: 8px;
   }
 
