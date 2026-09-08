@@ -632,6 +632,7 @@
 @media (max-width: 767px) {
   .hero {
     min-height: 60vh;
+    padding-top: 76px;
   }
 
   .hero__title {
