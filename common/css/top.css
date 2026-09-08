@@ -602,6 +602,10 @@
 
 /* ---------- SP（767px以下）差分 ---------- */
 @media (max-width: 767px) {
+  .hero {
+    min-height: 60vh;
+  }
+
   .hero__title {
     font-size: 1.75rem;
   }
@@ -687,7 +691,8 @@
   .overview-table__row--stack th,
   .overview-table__row--stack td {
     display: block;
-    width: 100%;
+    width: calc(100vw - 40px);
+    max-width: 100%;
     padding: 8px;
   }
 

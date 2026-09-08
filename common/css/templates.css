@@ -75,6 +75,10 @@ img {
   display: none;
 }
 
+.pc-only {
+  display: inline;
+}
+
 a {
   color: inherit;
   text-decoration: none;
@@ -166,10 +170,18 @@ button {
   gap: 15px;
 }
 
-.site-header__logo img {
+.site-header__logo-img {
+  display: block;
   height: 45px;
-  width: auto;
+  width: 49px;
   flex-shrink: 0;
+  background-color: var(--color-brand);
+  -webkit-mask-size: contain;
+  mask-size: contain;
+  -webkit-mask-repeat: no-repeat;
+  mask-repeat: no-repeat;
+  -webkit-mask-position: center;
+  mask-position: center;
 }
 
 .site-header__logo-text {
@@ -336,8 +348,17 @@ button {
     gap: 10px;
   }
 
-  .site-header__logo img {
+  .site-header__logo {
+    gap: 8px;
+  }
+
+  .site-header__logo-img {
     height: 26px;
+    width: 28px;
+  }
+
+  .site-header__logo-text {
+    font-size: 0.75rem; /* 12px */
   }
 
   .site-header__cta {
@@ -347,6 +368,10 @@ button {
 
   .sp-only {
     display: inline;
+  }
+
+  .pc-only {
+    display: none;
   }
 
   .side-nav {
