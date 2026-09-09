@@ -102,6 +102,10 @@ button {
   padding: var(--section-padding) 0;
 }
 
+.text-brand {
+  color: var(--color-brand);
+}
+
 /* 英語アイキャッチ見出し（各セクション先頭の小さい英字ラベル） */
 .eyebrow {
   display: inline-block;

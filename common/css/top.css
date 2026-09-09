@@ -262,6 +262,8 @@ main section[id] {
 .stat-badge {
   width: 160px;
   aspect-ratio: 1 / 1;
+  flex-shrink: 0;
+  overflow: hidden;
   padding: 16px;
   background: var(--color-bg-soft);
   border-radius: 0;
@@ -281,6 +283,10 @@ main section[id] {
 }
 
 .stat-badge__num {
+  display: flex;
+  align-items: baseline;
+  justify-content: center;
+  height: 44px;
   font-family: var(--font-en);
   font-size: 2.25rem;
   font-weight: 700;
@@ -297,6 +303,8 @@ main section[id] {
 
 .stat-badge__label {
   font-size: 0.8125rem;
+  line-height: 1.3;
+  min-height: 2.6em;
   color: var(--color-muted);
 }
 
@@ -688,6 +696,13 @@ main section[id] {
   .hero {
     min-height: 60vh;
     padding-top: 76px;
+    flex-direction: column;
+    gap: 24px;
+  }
+
+  .hero__scroll {
+    position: static;
+    transform: none;
   }
 
   .hero__update {
@@ -744,6 +759,20 @@ main section[id] {
   .stat-badge {
     width: 108px;
     padding: 10px;
+  }
+
+  .stat-badge__num {
+    height: 30px;
+    font-size: 1.5rem;
+    margin-bottom: 5px;
+  }
+
+  .stat-badge__unit {
+    font-size: 0.75rem;
+  }
+
+  .stat-badge__label {
+    font-size: 0.6875rem;
   }
 
   .special-list {
