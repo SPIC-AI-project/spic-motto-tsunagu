@@ -2,6 +2,11 @@
    top.css — TOPページ（懇親会LP）専用CSS
    ========================================================================== */
 
+/* ---------- 固定ヘッダー分のアンカー着地オフセット ---------- */
+main section[id] {
+  scroll-margin-top: 81px;
+}
+
 /* ---------- hero ---------- */
 .hero {
   position: relative;
@@ -630,6 +635,10 @@
 
 /* ---------- SP（767px以下）差分 ---------- */
 @media (max-width: 767px) {
+  main section[id] {
+    scroll-margin-top: 64px;
+  }
+
   .hero {
     min-height: 60vh;
     padding-top: 76px;
