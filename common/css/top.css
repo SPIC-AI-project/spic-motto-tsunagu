@@ -110,6 +110,52 @@ main section[id] {
   100% { transform: scaleY(0); transform-origin: bottom; }
 }
 
+.hero__update {
+  position: absolute;
+  right: 24px;
+  bottom: 24px;
+  z-index: 2;
+  font-size: 0.75rem;
+  color: rgba(255, 255, 255, 0.85);
+  text-align: right;
+}
+
+.hero__update-summary {
+  display: inline-block;
+  cursor: pointer;
+  list-style: none;
+  padding: 6px 16px;
+  border: 1px solid rgba(255, 255, 255, 0.35);
+  border-radius: 999px;
+  background: rgba(255, 255, 255, 0.08);
+  white-space: nowrap;
+}
+
+.hero__update-summary::-webkit-details-marker {
+  display: none;
+}
+
+.hero__update-summary::marker {
+  content: "";
+}
+
+.hero__update-list {
+  margin-top: 8px;
+  padding: 12px 16px;
+  background: rgba(7, 22, 48, 0.6);
+  border-radius: 10px;
+  text-align: left;
+}
+
+.hero__update-list li {
+  margin-bottom: 6px;
+  line-height: 1.5;
+}
+
+.hero__update-list li:last-child {
+  margin-bottom: 0;
+}
+
 /* ---------- why (この懇親会について) ---------- */
 .section-why {
   background: var(--color-white);
@@ -642,6 +688,20 @@ main section[id] {
   .hero {
     min-height: 60vh;
     padding-top: 76px;
+  }
+
+  .hero__update {
+    right: 12px;
+    bottom: 12px;
+    font-size: 0.6875rem;
+  }
+
+  .hero__update-summary {
+    padding: 5px 12px;
+  }
+
+  .hero__update-list {
+    max-width: 220px;
   }
 
   .hero__title {
