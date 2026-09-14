@@ -611,6 +611,25 @@ main section[id] {
   font-weight: 700;
 }
 
+.faq-name-list {
+  margin: 8px 0 12px;
+}
+
+.faq-name-list li {
+  margin-bottom: 4px;
+}
+
+.faq-name-list li:last-child {
+  margin-bottom: 0;
+}
+
+.faq-name-list__name {
+  display: inline-block;
+  min-width: 3em;
+  font-weight: 700;
+  color: var(--color-ink);
+}
+
 .overview-table {
   width: 100%;
   border-collapse: collapse;
