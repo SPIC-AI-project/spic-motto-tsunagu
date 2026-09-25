@@ -80,4 +80,18 @@ document.addEventListener("DOMContentLoaded", function () {
 
     goTo(0);
   });
+
+  var scrollTopTrigger = document.getElementById("js-scroll-top");
+  if (scrollTopTrigger) {
+    var scrollToTop = function () {
+      window.scrollTo({ top: 0, behavior: "smooth" });
+    };
+    scrollTopTrigger.addEventListener("click", scrollToTop);
+    scrollTopTrigger.addEventListener("keydown", function (e) {
+      if (e.key === "Enter" || e.key === " ") {
+        e.preventDefault();
+        scrollToTop();
+      }
+    });
+  }
 });
