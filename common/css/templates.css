@@ -218,6 +218,25 @@ button {
   transform: translateY(-2px) scale(1.04);
 }
 
+.site-header__actions {
+  flex-shrink: 0;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.site-header__cta--secondary {
+  display: none;
+  background: none;
+  color: var(--color-brand);
+  border: 1px solid var(--color-brand);
+}
+
+.site-header__cta--secondary:hover {
+  background: var(--color-sky-pale);
+  color: var(--color-brand);
+}
+
 /* ---------- side navigation（左サイドメニュー / PCのみ表示） ---------- */
 .side-nav {
   position: fixed;
@@ -368,6 +387,10 @@ button {
   .site-header__cta {
     padding: 8px 14px;
     font-size: 0.6875rem; /* 11px */
+  }
+
+  .site-header__cta--secondary {
+    display: inline-block;
   }
 
   .sp-only {
